@@ -1,0 +1,41 @@
+/* CSS TYPOGRAFÍA */
+/* **************************************************************** */
+
+/* VARIABLES */
+
+
+
+
+
+/* FUENTES NO STANDARD */
+@font-face {
+    font-family: 'sanspro_regular';
+    src: url(../fonts/sourcesanspro-regular-webfont.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'sanspro_negrita';
+    src: url(../fonts/sourcesanspro-black-webfont.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'sanspro_italica';
+    src: url(../fonts/sourcesanspro-lightit-webfont.woff2) format('woff2');
+}
+/* **************************************************************** */
+
+
+/* COLORES EN LA TIPOGRAFÍA */
+
+    /* links */
+    a{
+        color: var(--colorNegro);
+    }
+    a:hover{
+        color: var(--colorRojo);
+    }
+
+
+
+/* TIPOS DE TIPOGRAFÍA (H's, párrafos,..) */
+html{
+    font-family: sans-serif;
+}
