@@ -27,27 +27,56 @@
         <a href="login.html"><img class="banner-iconos" src="img/user.svg"></a>
       </header>
       <main class="registro">
-        <form>
           <center>
-          <div id="marco-lg">
+          <div id="marco-r">
             <center>
             <img class="user" src="img/user-grande.svg"></center>
-              <!-- Nombre -->
-              <input type="text" name="nombre" class="form" placeholder="Nombre*" id="formulario" required="required">
-              <!-- apellidos -->
-              <input type="text" name="apellidos" class="form" placeholder="Apellidos*" id="formulario" required="required">
-              <!-- correo -->
-              <input type="text" name="correo" class="form" placeholder="Email*" id="formulario" required="required">
-              <!-- contraseña -->
-              <input type="password" placeholder="Contraseña*" class="form" name="contraseña" id="formulario" required="required">
-              <input type="date" class="form" required="required" value="2022-00-00">
-              <input type="password" name="repetir_contraseña" class="form" placeholder="Repetir Contraseña*" id="formulario" required="required">
+            <form action="" class="form" id="form" autocomplete="off">
+              <h1>Regístrate</h1>
+              <div class="form-input myname">
+                <input type="text" class="inp" id="myname" placeholder="Nombre*">
+                <p class="mensajeError"></p>
+              </div>
 
-              <!-- Aceptar terminos y condiciones -->
-              <input type="checkbox" class="cb" id="check" required="required"> <p class="cbp">Al crear tu cuenta, aceptas nuestros Términos y Condiciones & Política de Privacidad*</p>
-              <a href="login.html"><INPUT TYPE="submit" class="boton-cuestionario" VALUE="Registrarse" id="boton"></a>
-               </div>
+              <div class="form-input surname">
+                <input type="text" class="inp" id="surname" placeholder="Apellido*">
+                <p class="mensajeError"></p>
+              </div>
+
+              <div class="form-input email">
+                <input type="email" class="inp" id="email" placeholder="Email*">
+                <p class="mensajeError"></p>
+              </div>
+
+              <div class="form-input mobile">
+                <input type="text" class="inp" id="mobile" placeholder="Telf*">
+                <p class="mensajeError"></p>
+              </div>
+
+              <div class="form-input password">
+                <input type="password"  class="inp" id="password" placeholder="Contraseña*">
+                <p class="mensajeError"></p>
+              </div>
+
+              <div class="form-input repeatPassword">
+                <input type="password" class="inp" id="repeatPassword" placeholder="Repetir Contraseña*">
+                <p class="mensajeError"></p>
+              </div>
+
+              <div class="form-termsAndConditions termsAndConditions">
+                <input type="checkbox" id="termsAndConditions">
+                <label for="termsAndConditions">He leído y acepto los terminos y condiciones </label>
+                <p class="mensajeError"></p>
+              </div>
+
+              <div class="form-boton" >
+                <a class="blue" href="login.html"><input type="submit" class="boton-cuestionario" value="Enviar"></a>
+              </div>
+              <p class="mensajeCorrecto"></p>
+            </form>
+            </div>
              </center>
       </main>
+      <script src="./js/js.js"></script>
     </body>
 </html>

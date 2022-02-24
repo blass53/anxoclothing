@@ -28,18 +28,30 @@
       </header>
     <body>
       <main class="registro">
-        <form><center>
+        <center>
           <div id="marco-lg">
             <center>
                 <img class="user" src="img/user-grande.svg"></center>
                 <center>
-              <!-- correo -->
-              <input type="text" name="correo" class="form" placeholder="Correo*" id="formulario">
-              <!-- contraseña -->
-              <input type="password" placeholder="Contraseña*" class="form" name="contraseña" id="formulario" ></center>
-              <a href="registro.html"><INPUT TYPE="button" class="boton-cuestionario" VALUE="Registrarse" id="boton"></a>
-              <a href="index.html"><INPUT TYPE="submit" class="boton-cuestionario" VALUE="Iniciar Sesión" id="boton"></a>
-              </div><center>
+                  <form action="" class="form" id="form" autocomplete="off">
+                    <div class="form-input email">
+                      <input type="email" class="inp" id="email" placeholder="Email*">
+                      <p class="mensajeError"></p>
+                    </div>
+
+
+                    <div class="form-input password">
+                      <input type="password"  class="inp" id="password" placeholder="Contraseña*">
+                      <p class="mensajeError"></p>
+                    </div>
+
+                    <div class="form-boton" >
+                      <a class="blue" href="login.html"><input type="submit" class="boton-cuestionario" value="Enviar"></a>
+                    </div>
+                    <p class="mensajeCorrecto"></p>
+                  </form>
+                  <a class="blue" href="registro.html"><input type="submit" class="boton-registro" value="Registrarse"></a>
       </main>
+      <script src="./js/logjs.js"></script>
     </body>
 </html>
