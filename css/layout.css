@@ -16,6 +16,11 @@ body {
   width: 100%;
 }
 
+.p_anuncio{
+    color: white;
+    font-size:15px;
+}
+
 .carrito{
 margin-top:20px;
 border-radius: 50%;
@@ -44,14 +49,29 @@ border: 2px solid white;
     box-shadow: 0 0 40px rgba(0,0,0,0.1);
 
 }
+#marco-r{
+    display: flex;
+    margin-top: 50px;
+    left: 200px;
+    display: inline-block;
+    height: 60%;
+    width: 40%;
+    border: 3px solid #3A3A39;
+    background-color: #3A3A39;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.1);
 
+}
 #marco-lg{
     display: flex;
     margin-top: 50px;
     left: 200px;
     display: inline-block;
     height: 60%;
-    width: 80%;
+    width: 40%;
     border: 3px solid #3A3A39;
     background-color: #3A3A39;
     border-top-left-radius: 20px;
@@ -73,15 +93,12 @@ br{
 }
 
 .registro{
-  display: flex;
+  /* display: flex; */
   align-items:center ;
   justify-content: center;
   background-color: #F4F4F4;
 }
-p{
-    color: white;
-    font-size:15px;
-}
+
 li{
   font-size:30px;
 }
@@ -138,30 +155,111 @@ input:checked ~ ul.menu{
   height:calc(100vh - 80px);
 }
 
-.form{
+/* .form{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-    /* tamaño largo */
     width: 43%;
     height: 30px;
     padding: 4px;
-    /* fondo */
+
     background:#f8f8f8;
-    /* 1px del borde */
     border:1px solid rgba(0, 0, 0, 0.075);
-    /* margen abajo */
     margin-bottom:25px;
-     /* margenes izquierda */
     margin-left: 30px;
-     /* margenes derecha */
     margin-right: 30px;
-    /* color */
+
     color:#727272 !important;
-    /* tamaño texto */
     font-size:13px;
 }
+.formulario{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+    width: 43%;
+    height: 30px;
+    padding: 4px;
+
+    background:#f8f8f8;
+
+    border:1px solid rgba(0, 0, 0, 0.075);
+
+    margin-bottom:25px;
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    color:#727272 !important;
+
+    font-size:13px;
+} */
+
+/* .formulario-error{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+    width: 43%;
+    height: 30px;
+    padding: 4px;
+    background:#f8f8f8;
+    border:3px solid red;
+    margin-bottom:25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color:#727272 !important;
+    font-size:13px;
+} */
+/* .p_error{
+  color: white;
+  font-size:10px;
+  display: none;
+}
+
+.p_error-act{
+  display: block;
+}
+.formularios-error {
+	color: red;
+}
+.formularios-ok{
+  color: green;
+}
+.formularios-error .formulario_validacion {
+	color: red;
+}
+.formularios-error .formulario {
+	border:3px solid red;
+} */
+
+/* .formulario__input-error {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 0;
+        display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+} */
 
 .boton-cuestionario{
   /* tamaño largo */
@@ -185,6 +283,40 @@ input:checked ~ ul.menu{
   border-radius: 8px;
 
 }
+.boton-cuestionario:hover{
+  background:#84EA83;
+  color: #3A3A39;
+}
+
+
+.boton-registro{
+  /* tamaño largo */
+  width: 20%;
+  height: 50px;
+  padding: 4px;
+  /* fondo */
+  background:#577FAE;
+  /* 1px del borde */
+  border:1px solid rgba(0, 0, 0, 0.075);
+  /* margen abajo */
+  margin-bottom:25px;
+   /* margenes izquierda */
+  margin-left: 30px;
+   /* margenes derecha */
+  margin-right: 30px;
+  /* color */
+  color:white;
+  /* tamaño texto */
+  font-size:13px;
+  border-radius: 100px;
+
+}
+
+.boton-registro:hover{
+  background:#295378;
+}
+
+
 .cb{
   margin-left: 10px;
   margin-bottom: 20px;
@@ -194,6 +326,10 @@ input:checked ~ ul.menu{
 .cbp{
   color: white;
   font-size:10px;
+}
+
+p{
+  color: white;
 }
 
 /* ESTADO iPad */
@@ -222,7 +358,7 @@ input:checked ~ ul.menu{
 @media only screen and (min-width: 1000px) {
     p{
         color: white;
-        font-size:20px;
+        font-size:15px;
     }
     input:checked ~ ul.menu{
       width: 100%;
@@ -237,4 +373,35 @@ input:checked ~ ul.menu{
       background-color: #666666 ;
       height:calc(100vh - 80px);
     }
+}
+
+.inp{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+    width: 70%;
+    height: 40px;
+    padding: 4px;
+
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:8px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    color:#727272 !important;
+    font-size:13px;
+}
+h1{
+  color:white;
+}
+label{
+  color:white;
+}
+
+
+.mensajeError{
+  color:red;
+
 }
