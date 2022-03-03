@@ -102,8 +102,15 @@ br{
 li{
   font-size:30px;
 }
+a{
+  color:white;
+}
 a.blue{
   color: #84BCFE;
+}
+
+a.blue:hover{
+  color: #A4CEFF;
 }
 
 header{
@@ -131,9 +138,6 @@ header img{
 }
 .logo{
   height: 58px;
-}
-a{
-  color:white;
 }
 label.boton{
   cursor:pointer;
@@ -351,6 +355,7 @@ p{
       background-color: #666666 ;
       height:calc(100vh - 80px);
     }
+
 }
 
 
@@ -374,6 +379,7 @@ p{
       height:calc(100vh - 80px);
     }
 }
+
 
 .inp{
   border-top-left-radius: 20px;
